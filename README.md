@@ -1,29 +1,4 @@
-# admin
+## 问题记录
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. `axios`发送`post`请求时需对数据进行处理，将对象序列化为字符串格式，否则会出现两次请求
+    第一次请求为options，第二次才能正常接收，服务器会获取不到参数
